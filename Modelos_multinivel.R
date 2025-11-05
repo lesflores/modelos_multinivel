@@ -1,3 +1,13 @@
+# =====================================================
+# Script: Modelo multinivel - Integridad institucional y conflicto
+# Autora: Lesly Estefanía Flores Rivera
+# Artículo base: "Conflictos de organizaciones criminales y el principio electoral de la democracia", Revista de Ciencia Política
+# DOI del Artículo: https://doi.org/10.5354/0719-5338.2024.72097
+# DOI del código: 10.5281/zenodo.13216146
+# Nota: Los datos utilizados corresponden a una parte del conjunto empleado en el artículo,
+#       adaptados para fines educativos y de replicación.
+# =====================================================
+
 # install.packages("readxl")
 library(readxl)
 library(tidyverse)
@@ -19,7 +29,7 @@ datos_estandarizados$Equal <- scale(data$Equal)
 datos_estandarizados$Genero_factor <- as.factor(datos_estandarizados$Genero)
 
 # install.packages("lmer4")
-library(lme4)
+library(lmer4)
 library(Matrix)
 library(lmerTest)
 
